@@ -1,0 +1,21 @@
+<button *ngIf="chatservice.userlog === false"
+        type="button" 
+        class="btn btn-outline-primary"
+        (click)="login()">
+        Entrar con Google
+</button>
+<button *ngIf="chatservice.userlog === false"
+        type="button" 
+        class="btn btn-outline-success"
+        (click)="logintui()">
+        Entrar con Twiter
+</button>
+
+
+<button *ngIf="chatservice.userlog"
+        type="button" 
+        class="btn btn-outline-primary"
+        (click)="logout()">
+        Salir
+</button> 
+
